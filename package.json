@@ -1,0 +1,25 @@
+{
+  "name": "reddit-compilation-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewYatzkan/reddit-compilation-creator.git"
+  },
+  "author": "Andrew Yatzkan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewYatzkan/reddit-compilation-creator/issues"
+  },
+  "homepage": "https://github.com/AndrewYatzkan/reddit-compilation-creator#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "reddit-comment-renderer": "^1.0.4",
+    "shelljs": "^0.8.3",
+    "text-to-mp3": "^1.0.4"
+  }
+}
