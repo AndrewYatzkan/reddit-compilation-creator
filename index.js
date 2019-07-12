@@ -13,6 +13,7 @@ async function concat(dir, output) {
 }
 
 function mp3(text, fileName) {
+	text = Buffer.from(text, "ascii").toString().replace(//g, ""); // so stuff like: ’ (char code: 8217) doesn't break everything
 	return new Promise((resolve, reject) => {
 		txttomp3.getMp3(text, (err, binaryStream) => {
 			if (err) reject(new Error(err));
@@ -29,7 +30,6 @@ async function createFiles(username, comment, upvotes, timestamp, folder) {
 	var segments = comment.match(/(?:[^;:,\.!\?]|[;:,\.!\?](?![\s"'\)]))+[;:,\.!\?"'\)]*/g);
 	var text = "";
 	var files = [];
-
 	for (var i = 0; i < segments.length; i++) {
 		var segment = segments[i];
 		text += segment;

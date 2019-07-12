@@ -18,7 +18,7 @@
   "homepage": "https://github.com/AndrewYatzkan/reddit-compilation-creator#readme",
   "dependencies": {
     "node-fetch": "^2.6.0",
-    "reddit-comment-renderer": "^1.0.4",
+    "reddit-comment-renderer": "^1.0.6",
     "shelljs": "^0.8.3",
     "text-to-mp3": "^1.0.4"
   }
